@@ -1,1 +1,14 @@
-﻿
+﻿name,type,x,y
+roadrunner,factory,89,27
+kasios,factory,90,21
+radiance,factory,109,26
+indigo,factory,120,22
+sensor_1,sensor,62,21
+sensor_2,sensor,66,35
+sensor_3,sensor,76,41
+sensor_4,sensor,88,45
+sensor_5,sensor,103,43
+sensor_6,sensor,102,22
+sensor_7,sensor,89,3
+sensor_8,sensor,74,7
+sensor_9,sensor,119,42
