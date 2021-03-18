@@ -19,6 +19,6 @@ wind_data <- wind_data %>%
   left_join(locations) %>% 
   mutate(x_end = x + x_diff,
          y_end = y + y_diff) %>% 
-  select(date, wind_speed, x, y, x_end, y_end)
+  select(date, wind_speed, name, x, y, x_end, y_end)
 
-write_csv("../DC3-data/additional_data/vector_field")
+write_csv(wind_data, "../DC3-data/additional_data/wind_field.csv")
