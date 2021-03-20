@@ -7,8 +7,8 @@ wind_data <- readxl::read_xlsx("../DC3-data/Sensor Data/Meteorological Data.xlsx
 
 # convert to miles in an hour from m/s
 wind_data <- wind_data %>% 
-  mutate(x_diff = (((wind_speed/1609)*60*60)/0.06)*sin(wind_dir*pi/180),
-         y_diff = (((wind_speed/1609)*60*60)/0.06)*cos(wind_dir*pi/180)) %>% 
+  mutate(x_diff = (-((wind_speed/1609)*60*60)/0.06)*sin(wind_dir*pi/180),
+         y_diff = (-((wind_speed/1609)*60*60)/0.06)*cos(wind_dir*pi/180)) %>% 
   drop_na() %>% 
   slice(rep(1:n(), each = 4))
 
